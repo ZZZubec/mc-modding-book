@@ -36,7 +36,7 @@ public class CommonProxy
 
     }
 
-    public void init(FMLInitializationEvent e)
+    public void init(FMLInitializationEvent event)
     {
 
     }
@@ -62,19 +62,19 @@ public class CommonProxy
 public class ClientProxy extends CommonProxy
 {
     @Override
-    public void preInit(FMLPreInitializationEvent e)
+    public void preInit(FMLPreInitializationEvent event)
     {
         super.preInit(event);
     }
 
     @Override
-    public void init(FMLInitializationEvent e)
+    public void init(FMLInitializationEvent event)
     {
         super.init(event);
     }
 
     @Override
-    public void postInit(FMLPostInitializationEvent e)
+    public void postInit(FMLPostInitializationEvent event)
     {
         super.postInit(event);
     }
@@ -102,19 +102,19 @@ public static CommonProxy proxy;
 
 ```java
 @EventHandler
-public void preInit(FMLPreInitializationEvent e)
+public void preInit(FMLPreInitializationEvent event)
 {
     proxy.preInit(event);
 }
 
 @EventHandler
-public void init(FMLInitializationEvent e)
+public void init(FMLInitializationEvent event)
 {
     proxy.init(event);
 }
 
 @EventHandler
-public void postInit(FMLPostInitializationEvent e)
+public void postInit(FMLPostInitializationEvent event)
 {
     proxy.postInit(event);
 }
@@ -140,19 +140,19 @@ public class Tutorial
     public static CommonProxy proxy;
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent e)
+    public void preInit(FMLPreInitializationEvent event)
     {
         proxy.preInit(event);
     }
 
     @EventHandler
-    public void init(FMLInitializationEvent e)
+    public void init(FMLInitializationEvent event)
     {
         proxy.init(event);
     }
 
     @EventHandler
-    public void postInit(FMLPostInitializationEvent e) 
+    public void postInit(FMLPostInitializationEvent event) 
     {
         proxy.postInit(event);
     }
